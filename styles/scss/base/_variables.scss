@@ -17,14 +17,24 @@
   --color-blue: #0094ff;
   --color-violet: #400478;
   --color-grad-1: linear-gradient(90deg, #000000ae 0%, #ffffff 100%);
-  --color-grad-2: linear-gradient(70deg, #ffffff 0%, #00000099 100%);
-  --color-grad-3: linear-gradient(241deg, #0000008b 0%, #e5e5e5 100%);
+  --color-grad-2: linear-gradient(70deg, #ffffff 10%, #000000fe 110%);
+  --color-grad-3: linear-gradient(241deg, #000000b0 0%, #e5e5e5 100%);
   --color-grad-4: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.95) 0%,
     rgba(0, 0, 0, 0.1) 100%
   );
-  --color-grad-5: linear-gradient(226deg, #fff 0%, #598be9 100%);
+  --color-grad-5: linear-gradient(226deg, #fff 0%, #00000058 100%);
+  --overlay-color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 20%,
+    rgb(255, 255, 255)
+  );
+  --overlay-color-reverse: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.45) 20%,
+    rgb(255, 255, 255)
+  );
 
   --border-radius-small: 5px;
   --border-radius-table: 10px;

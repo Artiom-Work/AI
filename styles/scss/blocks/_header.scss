@@ -16,7 +16,7 @@
 
   &__text {
     white-space: nowrap;
-
+    // if i  chenges adaptability , i will copy styles from W
     @include mobile-s-media {
       display: none;
     }

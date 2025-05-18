@@ -79,10 +79,14 @@
     &--small {
       @include fluid-text(26, 18);
     }
+    @include mobile-s-media {
+      font-size: 16px;
+    }
   }
 
   &__table {
     @include fluid-text(24, 16);
+
     margin-inline: auto;
     margin-block: 0 var(--indent);
 
@@ -95,6 +99,7 @@
     th,
     td {
       padding-inline: clamp(10px, 1.04vw, 20px);
+      text-align: center;
 
       @include mobile-s-media {
         padding-inline: 3px;
@@ -112,8 +117,10 @@
       }
       @include mobile-s-media {
         font-size: 10px;
+        margin-inline: calc(var(--indentSmall) * -1);
       }
     }
+
     &--medium-text {
       @include fluid-text(26, 14);
 
@@ -187,6 +194,7 @@
       @include decor-position-bottom-right;
     }
   }
+
   &__heading {
     &--center {
       position: relative;
