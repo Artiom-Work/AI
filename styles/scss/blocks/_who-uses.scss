@@ -134,7 +134,7 @@
     font-size: 12px;
     padding: 5px 10px;
     border-radius: var(--border-radius-small);
-    background-color: var(--color-light);
+    background: var(--color-grad-3);
 
     @include tablet-media {
       padding: 5px;

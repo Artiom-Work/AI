@@ -1,6 +1,8 @@
 :root {
   --color-dark: #191a23;
-  --color-light: #ffffff;
+  --color-light: #e5e4e2;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-gray: #cccccc;
   --color-gray-light: #efefef;
   --color-gray-medium: #e6e6e6;
@@ -16,24 +18,24 @@
   --color-green-dark: #34a753;
   --color-blue: #0094ff;
   --color-violet: #400478;
-  --color-grad-1: linear-gradient(90deg, #000000ae 0%, #ffffff 100%);
-  --color-grad-2: linear-gradient(70deg, #ffffff 10%, #000000fe 110%);
+  --color-grad-1: linear-gradient(90deg, #000000d3 0%, #e5e4e2 100%);
+  --color-grad-2: linear-gradient(70deg, #e5e4e2 -20%, #000000fe 110%);
   --color-grad-3: linear-gradient(241deg, #000000b0 0%, #e5e5e5 100%);
   --color-grad-4: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(0, 0, 0, 0.1) 100%
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(0, 0, 0, 0.6) 100%
   );
-  --color-grad-5: linear-gradient(226deg, #fff 0%, #00000058 100%);
+  --color-grad-5: linear-gradient(226deg, #e5e4e2 0%, #00000058 100%);
   --overlay-color: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.45) 20%,
-    rgb(255, 255, 255)
+    rgb(0, 0, 0)
   );
   --overlay-color-reverse: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.45) 20%,
-    rgb(255, 255, 255)
+    rgb(0, 0, 0)
   );
 
   --border-radius-small: 5px;

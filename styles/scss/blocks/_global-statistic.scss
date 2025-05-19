@@ -12,7 +12,7 @@
 
     @include mobile-media {
       padding-block: 30px 60px;
-      padding-inline: 20px;
+      padding-inline: var(--container-padding-x);
     }
 
     &::before {

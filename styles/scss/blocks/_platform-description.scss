@@ -89,7 +89,7 @@
 
     margin-inline: auto;
     margin-block: 0 var(--indent);
-
+    color: var(--color-dark);
     @include mobile-s-media {
       font-size: 12px;
     }

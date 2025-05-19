@@ -5,7 +5,7 @@
   left: 0;
   height: var(--menuHeight);
   box-shadow: var(--box-shadow-2);
-  background-color: var(--color-light);
+  background-color: var(--color-dark);
 
   &__list {
     @include flex-center;

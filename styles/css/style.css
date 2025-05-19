@@ -195,7 +195,9 @@ svg * {
 }
 :root {
   --color-dark: #191a23;
-  --color-light: #ffffff;
+  --color-light: #e5e4e2;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-gray: #cccccc;
   --color-gray-light: #efefef;
   --color-gray-medium: #e6e6e6;
@@ -211,24 +213,24 @@ svg * {
   --color-green-dark: #34a753;
   --color-blue: #0094ff;
   --color-violet: #400478;
-  --color-grad-1: linear-gradient(90deg, #000000ae 0%, #ffffff 100%);
-  --color-grad-2: linear-gradient(70deg, #ffffff 10%, #000000fe 110%);
+  --color-grad-1: linear-gradient(90deg, #000000d3 0%, #e5e4e2 100%);
+  --color-grad-2: linear-gradient(70deg, #e5e4e2 -20%, #000000fe 110%);
   --color-grad-3: linear-gradient(241deg, #000000b0 0%, #e5e5e5 100%);
   --color-grad-4: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(0, 0, 0, 0.1) 100%
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(0, 0, 0, 0.6) 100%
   );
-  --color-grad-5: linear-gradient(226deg, #fff 0%, #00000058 100%);
+  --color-grad-5: linear-gradient(226deg, #e5e4e2 0%, #00000058 100%);
   --overlay-color: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.45) 20%,
-    rgb(255, 255, 255)
+    rgb(0, 0, 0)
   );
   --overlay-color-reverse: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.45) 20%,
-    rgb(255, 255, 255)
+    rgb(0, 0, 0)
   );
   --border-radius-small: 5px;
   --border-radius-table: 10px;
@@ -315,8 +317,8 @@ body {
   font-family: var(--font-family-base);
   font-weight: 500;
   line-height: 1.28;
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  background-color: var(--color-black);
+  color: var(--color-light);
   padding-block: 0 var(--menuHeight);
 }
 
@@ -378,7 +380,9 @@ h4 {
 .h1,
 .h2,
 .h3,
-.h4 {
+.h4,
+.h5 {
+  color: var(--color-white);
   line-height: 1;
   margin-block: 0;
 }
@@ -410,6 +414,7 @@ h5,
 
 .accent-text {
   font-family: var(--font-family-base);
+  color: var(--color-white);
   font-weight: 700;
   letter-spacing: -0.06em;
 }
@@ -434,7 +439,7 @@ h5,
   width: 40vw;
   margin-right: auto;
   margin-left: 0;
-  border: 3px solid var(--color-blue-light);
+  border: 3px solid var(--color-gray-dark);
   border-radius: var(--border-radius-small);
 }
 .small-divider--center {
@@ -677,7 +682,7 @@ h5,
   height: var(--menuHeight);
   -webkit-box-shadow: var(--box-shadow-2);
           box-shadow: var(--box-shadow-2);
-  background-color: var(--color-light);
+  background-color: var(--color-dark);
 }
 .menu__list {
   display: -webkit-box;
@@ -1083,7 +1088,7 @@ h5,
   font-size: 12px;
   padding: 5px 10px;
   border-radius: var(--border-radius-small);
-  background-color: var(--color-light);
+  background: var(--color-grad-3);
 }
 @media (max-width: 1280px) {
   .who-uses__graph-image-value {
@@ -1115,7 +1120,7 @@ h5,
 @media (max-width: 767px) {
   .global-statistic__wrapper {
     padding-block: 30px 60px;
-    padding-inline: 20px;
+    padding-inline: var(--container-padding-x);
   }
 }
 .global-statistic__wrapper::before {
@@ -1314,6 +1319,7 @@ h5,
   }
 }
 .table th {
+  color: var(--color-dark);
   background-color: var(--color-gray-medium);
   font-weight: 700;
 }
@@ -2113,6 +2119,7 @@ h5,
   font-size: clamp(16px, 1.25vw, 24px);
   margin-inline: auto;
   margin-block: 0 var(--indent);
+  color: var(--color-dark);
 }
 @media (max-width: 480px) {
   .platform-description__table {
