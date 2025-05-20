@@ -46,7 +46,7 @@
     height: 30px;
     padding-block: 3px 0;
     border-radius: var(--border-radius-small);
-    color: var(--color-light);
+    color: var(--color-dark);
 
     @include tablet-media {
       min-width: clamp(40px, 4.29vw, 55px);

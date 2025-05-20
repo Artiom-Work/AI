@@ -1,0 +1,182 @@
+.preview {
+  background: var(--color-grad-1);
+
+  &__wrapper {
+    position: relative;
+    padding-block: var(--indentBig);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1100px;
+    width: 100%;
+
+    @include mobile-media {
+      padding-inline: var(--container-padding-x);
+      padding-block: var(--indent) var(--indentBig);
+    }
+
+    &::before {
+      @include square(clamp(96px, 15.1vw, 190px));
+
+      content: "";
+      position: absolute;
+      background: var(--color-grad-3);
+      border-radius: 50%;
+      top: 20px;
+      left: 40px;
+      z-index: -1;
+    }
+  }
+
+  &__image {
+    position: absolute;
+
+    &--desctop {
+      border-radius: var(--border-radius-small);
+      top: 15px;
+      left: 89px;
+
+      @include tablet-media {
+        width: 377px;
+        top: 12px;
+        left: 52px;
+      }
+      @include mobile-media {
+        width: 274px;
+        top: 9px;
+        left: 39px;
+      }
+      @include mobile-s-media {
+        width: 236px;
+        top: 6px;
+        left: 33px;
+      }
+    }
+
+    &--mobile {
+      top: 23px;
+      left: 7px;
+      border-radius: var(--border-radius-small) var(--border-radius-small) 20px
+        20px;
+
+      @include tablet-media {
+        width: 81px;
+        top: 15px;
+        left: 3px;
+        border-radius: 0 0 10px 10px;
+        object-fit: cover;
+        height: 130px;
+      }
+      @include mobile-media {
+        width: 124px;
+        top: 24px;
+        left: 5px;
+        border-radius: 0 0 15px 15px;
+        height: 200px;
+      }
+      @include mobile-s-media {
+        width: 81px;
+        top: 15px;
+        left: 3px;
+        border-radius: 0 0 10px 10px;
+        height: 130px;
+      }
+    }
+
+    &-group {
+      @include flex-space-between;
+
+      gap: 10px;
+
+      @include mobile-media {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      flex-shrink: 0;
+
+      &--desctop {
+        width: 810px;
+        height: 404px;
+
+        background: url(../../images/preview/background-desctop.webp) no-repeat
+          center / 100%;
+
+        @include tablet-media {
+          width: 480px;
+          height: 241px;
+        }
+        @include mobile-media {
+          width: 350px;
+          height: 178px;
+        }
+        @include mobile-s-media {
+          width: 300px;
+          height: 150px;
+        }
+      }
+
+      &--mobile {
+        width: 174px;
+        height: 296px;
+
+        background: url(../../images/preview/background-mobile.webp) no-repeat
+          center / 100%;
+
+        @include tablet-media {
+          width: 87px;
+          height: 148px;
+        }
+        @include mobile-media {
+          width: 134px;
+          height: 230px;
+        }
+        @include mobile-s-media {
+          width: 87px;
+          height: 148px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    @include fluid-text(50, 18);
+
+    background: var(--color-grad-4);
+    padding-block: clamp(15px, 2.6vw, 50px);
+    padding-inline: clamp(50px, 6.9vw, 100px);
+    box-shadow: var(--box-shadow);
+    white-space: nowrap;
+    align-self: center;
+  }
+
+  &__decor-image {
+    position: absolute;
+    right: 0;
+    bottom: var(--indentBig);
+    fill: var(--color-dark);
+
+    &--top {
+      rotate: 90deg;
+      position: absolute;
+      top: -55px;
+      right: 677px;
+
+      @include desktop-media {
+        top: -2.8vw;
+        right: 627px;
+      }
+      @include tablet-media {
+        right: max(437px, 46.7vw);
+      }
+
+      @include mobile-media {
+        right: max(84.7vw, 293px);
+        top: -4vw;
+      }
+    }
+  }
+}

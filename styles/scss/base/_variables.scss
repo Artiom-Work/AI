@@ -29,12 +29,12 @@
   --color-grad-5: linear-gradient(226deg, #e5e4e2 0%, #00000058 100%);
   --overlay-color: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.45) 20%,
+    rgba(249, 231, 231, 0.45) 20%,
     rgb(0, 0, 0)
   );
   --overlay-color-reverse: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.45) 20%,
+    rgba(249, 231, 231, 0.45) 20%,
     rgb(0, 0, 0)
   );
 
@@ -57,6 +57,7 @@
   --menuHeight: 100px;
   --container-padding-x: 20px;
   --whoUsesMagrinTopMobile: 250px;
+  --button-height: 55px;
 
   --indentSmall: clamp(12.5px, 1.25vw, 25px);
   --indent: clamp(25px, 2.5vw, 50px);
@@ -66,5 +67,8 @@
 
   @include mobile-media {
     --menuHeight: clamp(80px, 13vw, 100px);
+  }
+  @include mobile-s-media {
+    --button-height: 44px;
   }
 }

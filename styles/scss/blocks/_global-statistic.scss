@@ -168,7 +168,7 @@
     position: absolute;
     right: clamp(20px, 2.56vw, 60px);
     bottom: clamp(90px, 18.4vw, 354px);
-
+    fill: var(--color-dark);
     &--top {
       rotate: 90deg;
       position: absolute;

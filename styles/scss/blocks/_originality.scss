@@ -47,18 +47,16 @@
 
   &__form {
     --formButtonWidth: 100px;
-    --formHeight: 55px;
 
     box-shadow: var(--box-shadow-2);
     font-family: var(--font-family-second);
     position: relative;
     max-width: 320px;
-    min-height: var(--formHeight);
+    min-height: var(--button-height);
     margin-inline: auto;
     border-radius: var(--border-radius-large);
 
     @include mobile-s-media {
-      --formHeight: 44px;
       --formButtonWidth: 90px;
 
       max-width: 280px;
@@ -70,7 +68,7 @@
     width: 100%;
     outline: transparent;
     border: transparent;
-    height: var(--formHeight);
+    height: var(--button-height);
 
     padding: 10px calc(var(--formButtonWidth) + 20px) 10px 20px;
 
@@ -89,18 +87,7 @@
 
     width: var(--formButtonWidth);
     height: 100%;
-    border: none;
     border-radius: 0 var(--border-radius-large) var(--border-radius-large) 0;
-    background: var(--color-grad-1);
-    font-weight: 900;
-    color: var(--color-light);
-
-    @include hover {
-      color: var(--color-dark);
-    }
-    @include active {
-      transform: scale(1.05);
-    }
   }
 
   &__decor-background {

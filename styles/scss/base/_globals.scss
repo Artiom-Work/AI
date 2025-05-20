@@ -125,6 +125,7 @@ h5,
   }
 }
 .decor-image {
+  fill: var(--color-light);
   width: clamp(44px, 4.58vw, 88px);
   height: clamp(55px, 5.7vw, 111px);
 }

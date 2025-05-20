@@ -1583,8 +1583,6 @@ function addTablesToHtml() {
 						</table>
 
 				</div>
-
-				<div class="invest-indicators__decor-background section__decor-background "></div>
 			</section>
 		`;
 		startPointDriving.insertAdjacentHTML('afterend', tableSections);
