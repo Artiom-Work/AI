@@ -1524,12 +1524,22 @@ h5,
   color: var(--color-red);
   font-weight: 900;
 }
+.calc-table__row--capt, .calc-table__row--gray-bg {
+  font-style: italic;
+  text-align: end;
+}
 .calc-table__row--cash-balance {
   font-weight: 700;
   color: var(--color-green-dark);
 }
+.calc-table__row--cash-balance .calc-table__row-title {
+  color: var(--color-green-light);
+}
 .calc-table__row--bold {
   font-weight: 700;
+}
+.calc-table__row--gray-bg {
+  color: var(--color-dark);
 }
 .calc-table__row--blue {
   background-color: var(--color-blue);
@@ -1541,6 +1551,7 @@ h5,
 }
 .calc-table__row--yellow-title td:first-child {
   background-color: var(--color-yellow);
+  color: var(--color-dark);
 }
 .calc-table__row--gray-bg {
   background-color: var(--color-gray-light);
@@ -1599,12 +1610,6 @@ h5,
 }
 .calc-table--invest tbody tr:first-child {
   height: var(--cellHeightMedium);
-}
-
-.calc-table__row--capt,
-.calc-table__row--gray-bg {
-  font-style: italic;
-  text-align: end;
 }
 
 .originality__inner {
